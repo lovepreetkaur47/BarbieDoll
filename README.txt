@@ -101,3 +101,7 @@ then testedit it workedd .........
 
  1.56
  add cssss
+ add colour and font-family in css
+ 2.34 
+ finaly i add images 
+ and update all step
