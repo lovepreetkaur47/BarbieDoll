@@ -12,3 +12,19 @@ change Welcome massage to Welcome To Barbie Doll Company
 7.57
 Move to Part -2
 Then follow toturial 
+Add Hello And Welcom Massage 
+then test 
+it was okkkkkk!!!!
+Then follow toturial 
+add controller and test it 
+it was gooood.......
+8.14
+Part3
+Then follow toturial.....
+Add a view
+and Also add About us page and add details to it 
+the test it
+was working 
+.........
+view part finish
+
