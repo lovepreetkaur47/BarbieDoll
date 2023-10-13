@@ -20,6 +20,11 @@ namespace BarbieDoll.Controllers
         }
 
         // GET: Dolls
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+        return "From [HttpPost]Index: filter on " + searchString;
+        }
         public async Task<IActionResult> Index(string id)
         {
             var dolls = from m in _context.Doll

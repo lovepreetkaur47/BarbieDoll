@@ -70,3 +70,14 @@ it was good
 after
 i changed SearchString to id 
 then testedit it workedd .........
+12.31
+ updated new index method with
+ [HttpPost] Index
+ then going to test it.......
+ it was goood .........................................
+ .............
+ then index.cshtml
+ add get method
+ 12.47
+ create a new model class
+ DollColorviewmodels.cs
