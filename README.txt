@@ -51,3 +51,22 @@ its properly work in laptop after making asignment
 other assignment ...........
 finally it create all create, edit, delete folder for me
 then i follow toturial
+11.40
+i create a folder in model foe seed data
+the add 10 value to it
+after replace content in program.cs
+then test it
+wow, it was good 
+index page 
+with dolls and oth attribute values
+11.47
+Examine all code 
+as folow toturial
+12.05
+Add search string 
+by type with SearchString 
+then test it 
+it was good
+after
+i changed SearchString to id 
+then testedit it workedd .........

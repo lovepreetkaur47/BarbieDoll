@@ -20,13 +20,21 @@ namespace BarbieDoll.Controllers
         }
 
         // GET: Dolls
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id)
         {
-            return View(await _context.Doll.ToListAsync());
+            var dolls = from m in _context.Doll
+                        select m;
+
+            if (!String.IsNullOrEmpty(id))
+            {
+                dolls = dolls.Where(s => s.Type.Contains(id));
+            }
+
+            return View(await dolls.ToListAsync());
         }
 
-        // GET: Dolls/Details/5
-        public async Task<IActionResult> Details(int? id)
+            // GET: Dolls/Details/5
+            public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
