@@ -20,26 +20,38 @@ namespace BarbieDoll.Controllers
         }
 
         // GET: Dolls
-        [HttpPost]
-        public string Index(string searchString, bool notUsed)
+        
+        public async Task<IActionResult> Index(string dollcolor, string searchString)
         {
-        return "From [HttpPost]Index: filter on " + searchString;
-        }
-        public async Task<IActionResult> Index(string id)
-        {
+            // Use LINQ to get list of genres.
+            IQueryable<string> colorQuery = from m in _context.Doll
+                                            orderby m.Color
+                                            select m.Color;
+
             var dolls = from m in _context.Doll
                         select m;
 
-            if (!String.IsNullOrEmpty(id))
+            if (!string.IsNullOrEmpty(searchString))
             {
-                dolls = dolls.Where(s => s.Type.Contains(id));
+                dolls = dolls.Where(s => s.Type.Contains(searchString));
             }
 
-            return View(await dolls.ToListAsync());
+            if (!string.IsNullOrEmpty(dollcolor))
+            {
+                dolls = dolls.Where(x => x.Color == dollcolor);
+            }
+
+            var dollColorVM = new DollColorViewModel
+            {
+                Color = new SelectList(await colorQuery.Distinct().ToListAsync()),
+                Dolls = await dolls.ToListAsync()
+            };
+
+            return View(dollColorVM);
         }
 
-            // GET: Dolls/Details/5
-            public async Task<IActionResult> Details(int? id)
+        // GET: Dolls/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {

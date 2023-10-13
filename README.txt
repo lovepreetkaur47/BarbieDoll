@@ -37,6 +37,7 @@ add a new folder bye name Data
 data-BarbieDollController 
 add bd content 
 and test it 
+i was good
 
 
 after i make a class in model folder 
@@ -81,3 +82,9 @@ then testedit it workedd .........
  12.47
  create a new model class
  DollColorviewmodels.cs
+ Replace the Index method in MoviesController.cs
+ then update index.html
+ and search by type and color
+ 1.07
+ test it
+ i was good
