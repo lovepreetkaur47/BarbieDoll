@@ -31,3 +31,23 @@ view part finish
 
 follow toturial to add a model
 make a class in models
+and test it
+9.00
+add a new folder bye name Data
+data-BarbieDollController 
+add bd content 
+and test it 
+
+
+after i make a class in model folder 
+and assigned 6 attributes
+now i updates my startup.cs by adding two more using statements 
+and add configure Services
+10.00
+its time to do scaffolding 
+in controller
+its first time 
+its properly work in laptop after making asignment 
+other assignment ...........
+finally it create all create, edit, delete folder for me
+then i follow toturial

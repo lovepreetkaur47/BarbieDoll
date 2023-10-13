@@ -20,7 +20,7 @@ namespace BarbieDoll.Models
         
         public string Color { get; set; }
 
-        [Range(1, 100)]
+        
        
         public decimal Price { get; set; }
         
