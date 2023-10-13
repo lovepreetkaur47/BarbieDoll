@@ -27,4 +27,7 @@ the test it
 was working 
 .........
 view part finish
+8.34
 
+follow toturial to add a model
+make a class in models
